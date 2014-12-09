@@ -53,7 +53,6 @@ class TestSelenium(TestCase):
         pass
     def test_tttt2(self):
         pass
-    
     def test_tttt3(self):
         pass
 
