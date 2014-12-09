@@ -49,3 +49,9 @@ class TestSelenium(TestCase):
 
     def test_tttt(self):
         pass
+    def test_tttt1(self):
+        pass
+    def test_tttt2(self):
+        pass
+    def test_tttt3(self):
+        pass
