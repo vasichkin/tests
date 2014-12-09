@@ -18,13 +18,32 @@ __email__ = "vkhomenko@qubell.com"
 __copyright__ = "Copyright 2014, Qubell.com"
 __license__ = "Apache"
 
+from unittest.case import skip
 
 from unittest import TestCase
 
 class TestSelenium(TestCase):
+    @classmethod
+    def setUpClass(cls):
+        super(TestSelenium, cls).setUpClass()
+        print "Run before all methods"
+
+    @classmethod
+    def tearDownClass(cls):
+        super(TestSelenium, cls).tearDownClass()
+        print "Run after all methods"
+
+
+    def setUp(self):
+        print "Run before every test"
+
+    def tearDown(self):
+        print "Run after every test"
+
     def test_one(self):
         assert True
 
+    @skip('Test broken')
     def test_fail(self):
         assert False
 

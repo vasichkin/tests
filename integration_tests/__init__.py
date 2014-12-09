@@ -17,3 +17,17 @@ __author__ = "Vasyl Khomenko"
 __email__ = "vkhomenko@qubell.com"
 __copyright__ = "Copyright 2014, Qubell.com"
 __license__ = "Apache"
+
+
+print "This code executes every time module imported"
+
+def setUpModule():
+    """
+    Here goes preparation for whole test run.
+     Start selenium, import database, ect.
+    """
+    pass
+
+def tearDownModule():
+    """ stop selenium """
+    pass
