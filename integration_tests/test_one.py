@@ -24,3 +24,9 @@ from unittest import TestCase
 class TestSelenium(TestCase):
     def test_one(self):
         assert True
+
+    def test_fail(self):
+        assert False
+
+    def test_tttt(self):
+        pass
